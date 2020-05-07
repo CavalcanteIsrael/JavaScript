@@ -1,0 +1,10 @@
+var c = 1
+do {
+    console.log(`Você já comeu ${c} pedaços de pizza`)
+    if (8 - c = 0) {
+        console.log("Sua pizza acabou. Compre outra!")
+    }
+    console.log(`Restam ${8-c} pedaços`)
+    c++
+}
+while (c <= 8)
