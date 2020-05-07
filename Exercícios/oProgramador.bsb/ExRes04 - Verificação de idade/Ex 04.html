@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <style>
+        body {
+            padding-top: 30px;
+            background-color: rgb(31, 31, 175);
+        }
+        div {
+            font-family: Arial;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
+        }
+        input {
+            width: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section id="pag">
+        <div>
+            <h1>Verificação de idade</h1>
+        </div>
+        <div>
+            <p>
+                Digite sua idade:
+                <input type = "number" name = "txtnum" id = "txtnum">
+                <input type = "button" value = "Verificar"  onclick = "verificar()">
+            </p>
+        </div>
+        <div id = "res">
+            Aguardando informações...
+        </div>
+    </section>
+    <script>
+        function verificar () {
+            var idade = Number(document.getElementById('txtnum').value)
+            var res = document.getElementById('res')
+            var pag = document.getElementById('pag')
+
+            if (idade <= 0){
+                window.alert(`Idade inválida. Digite um número maior que zero.`)
+            }else if (idade < 18) {
+                window.alert(`Alerta! Você é menor de 18 anos. Você não pode acessar o conteúdo.`)
+                pag.innerHTML = `Acesso negado`
+                pag.style.fontFamily = 'Arial'
+                pag.style.fontSize = '30px'
+            }else if (idade >= 18) {
+                pag.innerHTML = `Idade verificada <br>`
+                pag.innerHTML += `Acesso permitido`
+                pag.style.fontFamily = 'Arial'
+                pag.style.fontSize = '30px'
+            }
+        }
+    </script>
+</body>
+</html>

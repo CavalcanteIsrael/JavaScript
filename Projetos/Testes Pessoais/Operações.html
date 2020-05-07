@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Testando Possibilidades</h1>
+        </div>
+        <div>
+            <p>
+                <input type="number" name="visor" id="visor" value="0" style="text-align: right;">
+            </p>
+            <p>
+                <input type="button" value="3" onclick="but3()" id="but">
+                <input type="button" value="5" onclick="but5()" id="but">
+                <input type="button" value="+" onclick="soma()" id="soma">
+                <input type="button" value="=" onclick="igual()">
+                <input type="button" value="C" onclick="zerar()" id="zerar">
+            </p>
+        </div>
+        <div id = "res">
+        </div>
+    </section>
+    <script>
+        var a = []
+        var visor = document.getElementById("visor")
+        var res = document.getElementById("res")
+        var resultado, adicao = 0
+
+        function but3 () {
+            resultado = document.getElementById('visor').value += 3
+        }
+
+        function but5 () {
+            resultado =  document.getElementById('visor').value += 5
+        }
+
+        function zerar () {
+            visor = document.getElementById("visor").value = 0
+        }
+
+        function soma () {
+            adicao = getElementById('visor').value
+            resultado += adicao
+            visor = document.getElementById('visor').value = 0
+        }
+        
+        function igual () {
+            res.innerHTML = ''
+            res.innerHTML = `Resultado: ${resultado}`
+        }
+    </script>
+</body>
+</html>

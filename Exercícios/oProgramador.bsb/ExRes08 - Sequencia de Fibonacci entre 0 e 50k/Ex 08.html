@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+    <style>
+        body {
+            padding-top: 30px;
+            background-color: rgb(31, 31, 175);
+        }
+        div {
+            text-align: center;
+            font-family: Arial;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
+        }
+        input {
+            width: 70px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Sequência de Fibonacci</h1>
+            <h3>Números de 0 a 50 mil</h3>
+        </div>
+        <div>
+            <p>
+                <input type="button" value="Conferir" onclick="contar()">
+            </p>
+            <p id = "res">
+                <strong>Vamos conferir?</strong></strong>
+            </p>
+            <p id = "rod">
+
+            </p>
+        </div>
+    </section>
+    <script>
+        function contar() {
+            var c = 1
+            var n
+            var pen = 0, ult = 1 
+            var soma = 0
+            var res = document.getElementById("res")
+            var rod = document.getElementById("rod")
+
+            res.innerHTML = `Os números são </br> 0`
+
+            for (c = 1; ult < 50000; c ++ ) {
+                if (c <= 2){
+                    n = c - 1
+                    soma += n
+                    res.innerHTML += `, ${n}`  
+                }else {
+                n = ult + pen
+                pen = ult
+                ult = n
+                soma += ult
+                res.innerHTML += `, ${n}`  
+                }  
+
+            }
+            rod.innerHTML += `A soma de todos os termos é ${soma}`
+        }
+    </script>
+</body>
+</html>

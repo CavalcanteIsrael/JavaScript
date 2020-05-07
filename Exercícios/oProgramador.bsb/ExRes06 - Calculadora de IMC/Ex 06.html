@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding-top: 30px;
+            background-color: rgb(31, 31, 175);
+        }
+        div {
+            font-family: Arial;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
+        }
+        input {
+            width: 70px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <section>
+        <div>
+            <h1>CALCULADORA DE IMC</h1>
+            <h4>Digite sua altura e peso nos campos abaixo</h4>
+        </div>
+        <div id = "pag">
+            <p>
+            </br>Altura
+                <input type="number" name="txtalt" id="txtalt">&emsp; 
+                Peso 
+                <input type="number" name="txtpes" id="txtpes"> &emsp;
+                <button type="button" onclick="calcular()">Calcular</button>
+            </p>
+            <p>
+            </br>
+            Aguardando valores...
+            </p>
+        </div>
+    </section>
+    <script>
+        function calcular() {
+            var altura = Number(document.getElementById("txtalt").value)
+            var peso = Number(document.getElementById("txtpes").value)
+            var pag = document.getElementById("pag")
+
+            pag.innerHTML = `O resultado é ${peso/(altura*altura)}`
+        }
+    </script>    
+</body>
+</html>

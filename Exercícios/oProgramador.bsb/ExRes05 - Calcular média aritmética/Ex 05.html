@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+    <style>
+        body {
+            padding-top: 30px;
+            background-color: rgb(31, 31, 175);
+        }
+        div {
+            font-family: Arial;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
+        }
+        input {
+            width: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <p>
+                Programa para calcular média aritmética
+            </p>
+        </div>
+        <div id = "res">
+            <p>
+                Aguardando dados...
+            </p>
+        </div>
+    </section>
+    <script>
+        var num1 = parseInt(prompt('Digite o 1º número'))
+        var num2 = parseInt(prompt('Digite o 2º número'))
+        var num3 = parseInt(prompt('Digite o 3º número'))
+        var res = document.getElementById('res')
+
+        window.alert("A média é "+ (num1+num2+num3)/3) 
+    </script>
+</body>
+</html>
