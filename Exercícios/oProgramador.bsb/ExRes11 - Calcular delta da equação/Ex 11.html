@@ -4,32 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 11</title>
-    <style>
-        body {
-            padding-top: 30px;
-            background-color: rgb(31, 31, 175);
-        }
-        div {
-            text-align: center;
-            font-family: Arial;
-        }
-        section {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 500px;
-            margin: auto;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
-        }
-        input {
-            width: 70px;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <section>
         <div>
@@ -49,21 +26,6 @@
             Aguardando dados...
         </div>
     </section>
-    <script>
-        function calcular () {
-            var a = Number(document.getElementById("txta").value)
-            var b = Number(document.getElementById("txtb").value)
-            var c = Number(document.getElementById("txtc").value)
-            var res = document.getElementById("res")
-
-            res.innerHTML = `Fórmula: Δ = b² – 4ac</br>`
-            res.innerHTML += `</br>A resolução do exercício é esta: </br>`
-            res.innerHTML += `</br>Δ = ${a}² - 4 . ${b} . ${c}</br>`
-            res.innerHTML += `Δ = ${b*b} + (${-4*a*c})</br>`
-            res.innerHTML += `Δ = ${b*b-4*a*c}</br>`
-            res.innerHTML += `O valor de Delta é ${b*b-4*a*c}`           
-        
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

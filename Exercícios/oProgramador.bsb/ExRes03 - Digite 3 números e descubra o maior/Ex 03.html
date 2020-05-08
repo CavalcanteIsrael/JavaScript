@@ -4,20 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 03</title>
-    <style>
-        section {
-            background: white;
-        border-radius: 10px;
-        padding: 15px;
-        width: 500px;
-        margin: auto;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
-        }
-        input {
-            width: 70px;
-            text-align: center;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>Digite 3 números e descubra qual é o maior</h1>
@@ -36,29 +23,6 @@
             Aguardando preenchimento de campos...
         </div>
     </section>
-    <script>
-        function calcular () {
-
-            //Declaração de variáveis
-            var num1 = Number(document.getElementById('txtn1').value)
-            var num2 = Number(document.getElementById('txtn2').value)
-            var num3 = Number(document.getElementById('txtn3').value)
-            var res = document.getElementById('res')
-
-            //Manutenção do texto da Section
-            res.innerHTML = ``
-            res.innerHTML = `O maior número é: `
-
-            //Parte lógica
-            if (num1 > num2 && num1 > num3) {
-                res.innerHTML += `${num1}`
-            }else if (num2 > num1 && num2 > num3) {
-                res.innerHTML += `${num3}`
-            }else if (num3 > num1 && num3 > num2){
-                res.innerHTML += `${num3}`
-            }
-            
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

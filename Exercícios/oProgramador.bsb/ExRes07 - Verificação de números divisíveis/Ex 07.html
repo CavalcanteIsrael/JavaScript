@@ -4,32 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 07</title>
-    <style>
-        body {
-            padding-top: 30px;
-            background-color: rgb(31, 31, 175);
-        }
-        div {
-            text-align: center;
-            font-family: Arial;
-        }
-        section {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 500px;
-            margin: auto;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
-        }
-        input {
-            width: 70px;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-    </style>
-
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <section>
@@ -47,47 +22,6 @@
             Aguardando escolha...
         </div>
     </section>
-    <script>
-        function mult3 () {
-            //Declaração de variáveis
-            var n = 3
-            var c = 1
-            var r = 0
-            var sum = 0
-            var res = document.getElementById("res")
-
-            //Modificação de página
-            res.innerHTML = `Somatório dos números divisíveis por ${n} de 0 a 1000 é</br>`
-
-            //Parte lógica
-            for (c = 1; c <= 1000; c++){
-                if (c % n == 0) {
-                    var r = c
-                    sum += c
-                }
-            }
-            res.innerHTML += ` ${sum}`
-        }
-        function mult5 () {
-            //Declaração de variáveis
-            var n = 5
-            var c = 1
-            var r = 0
-            var sum = 0
-            var res = document.getElementById("res")
-
-            //Modificação de página
-            res.innerHTML = `Somatório dos números divisíveis por ${n} de 0 a 1000 é</br>`
-
-            //Parte lógica
-            for (c = 1; c <= 1000; c++){
-                if (c % n == 0) {
-                    var r = c
-                    sum += c
-                }
-            }
-            res.innerHTML += ` ${sum}`
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

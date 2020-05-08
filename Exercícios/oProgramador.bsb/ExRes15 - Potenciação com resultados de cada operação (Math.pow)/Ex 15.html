@@ -4,32 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 15</title>
-    <style>
-        body {
-            padding-top: 30px;
-            background-color: rgb(31, 31, 175);
-        }
-        div {
-            text-align: center;
-            font-family: Arial;
-        }
-        section {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 500px;
-            margin: auto;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
-        }
-        input {
-            width: 200px;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <section>
@@ -42,20 +17,6 @@
             <p id = "res">Aguardando resultado...</p>
         </div>
     </section>
-    <script>
-        function clique () {
-            res = document.getElementById("res")
-            var base = 2 
-            var expoente = 8
-
-            res.innerHTML = `Exibindo resultados para cada operação com os números ${base +' e '+ expoente}: </br>`
-
-            for (var c = 1; c <= expoente; c++) {
-               var resultado = Math.pow(base, c)
-               res.innerHTML += `</br>Base: 2 \t Expoente: ${c} = 2 <sup>${expoente}</sup> = ${resultado}`
-            }
-
-        }                                                      
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

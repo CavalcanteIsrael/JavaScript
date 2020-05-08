@@ -4,31 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 09</title>
-    <style>
-        body {
-            padding-top: 30px;
-            background-color: rgb(31, 31, 175);
-        }
-        div {
-            text-align: center;
-            font-family: Arial;
-        }
-        section {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 500px;
-            margin: auto;
-            box-shadow: 3px 3px 10px rgba(0, 0, 0.363);            
-        }
-        input {
-            width: 70px;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <section>
@@ -44,25 +20,6 @@
             Vamos contar?
         </div>
     </section>
-    <script>
-        function contar () {
-            var primosEncontrados = 0;
-            var res = document.getElementById("res")
-
-            for (dividendo = 2; primosEncontrados < 1001; dividendo++) {
-                var ehPrimo = true;
-                for (divisor = 2; dividendo > divisor ; divisor++) {
-                if (dividendo % divisor == 0) {
-                    ehPrimo = false;
-                    break;
-                };
-                };
-                if (Boolean(ehPrimo)) { 
-                primosEncontrados++;
-                }
-            };
-            res.innerHTML = `o 1001º número primo é: </br><strong>${dividendo}</strong>`
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
