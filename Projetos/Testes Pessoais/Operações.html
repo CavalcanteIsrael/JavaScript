@@ -4,35 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div>
+        <h1>JS Calculator</h1>
+    </div>
     <section>
-        <div>
-            <h1>Testando Possibilidades</h1>
-        </div>
         <div>
             <p>
                 <input type="number" name="visor" id="visor" value="0" style="text-align: right;">
             </p>
             <p>
+                <input type="button" value="C" onclick="zerar()" id="zerar">
+                <input type="button" value="← Back" onclick="" id="back">
+            </p>
+            <p>
                 <input type="button" value="7" onclick="but(7)" id="but7">
                 <input type="button" value="8" onclick="but(8)" id="but8">
                 <input type="button" value="9" onclick="but(9)" id="but9">
-                <input type="button" value="+" onclick="soma()" id="soma">
-                <input type="button" value="=" onclick="igual()">
-                <input type="button" value="C" onclick="zerar()" id="zerar">
+                <input type="button" value="÷" onclick="div()" id="div">
             </p>
-            <p>
-                
+            <p>                
                 <input type="button" value="4" onclick="but(4)" id="but4">
                 <input type="button" value="5" onclick="but(5)" id="but5">
                 <input type="button" value="6" onclick="but(6)" id="but6">
+                <input type="button" value="x" onclick="mult()" id="mult">
+
+            </p>
+            <p>
+                <input type="button" value="1" onclick="but(1)" id="but1">
+                <input type="button" value="2" onclick="but(2)" id="but2">
+                <input type="button" value="3" onclick="but(3)" id="but3">
                 <input type="button" value="-" onclick="subt()" id="subt">
             </p>
-        </div>
-        <div id = "res">
+            <p>
+                <input type="button" value="." onclick="but()" id="ponto">
+                <input type="button" value="0" onclick="but(0)">
+                <input type="button" value="=" onclick="igual()">
+                <input type="button" value="+" onclick="soma()" id="soma">
+            </p>
         </div>
     </section>
+    <div id = "res">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

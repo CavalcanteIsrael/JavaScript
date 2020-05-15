@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(58, 58, 197);
+}
+input[type=button] {
+    font-family: Arial;
+    text-align: center;
+    width: 30px;
+    background-color: white;
+    border-radius: 3px;
+    border-width: 1px;
+    vertical-align: bottom;
+}
+section {
+    background-color: white;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.514);
+    text-align: center;
+    width: 150px;
+    padding: 18px;
+    padding-top: 35px;
+}
+input#visor {
+    width: 125px;
+}
+h1 {
+    color: white;
+    font-family: Arial;
+    font-weight: 500;
+}
+div#res {
+    padding: 20px;
+}
+input#zerar {
+    width: 65px;
+}
+input#back {
+    width: 65px;
+}
+input#visor{
+    border-width: 1px;
+}
