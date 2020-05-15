@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo e Let</title>
+</head>
+<body>
+    <div>
+        <p>
+            Teste
+        </p>
+    </div>
+    <div id="corpo">
+        Dados
+    </div>
+    <script>
+        var nome = 'Ayrton'
+        var corpo = document.getElementById("corpo")
+
+        function imprimeNome () {
+            document.write(nome)
+        }
+
+        corpo.innerHTML += imprimeNome()
+
+        function imprimeIdade () {
+            var idade = 27
+            document.write(idade)
+        }
+
+        corpo.innerHTML += imprimeIdade()
+        //console.log(idade)
+        //console.log(nome)
+    </script>
+</body>
+</html>

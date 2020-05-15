@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function imprimeThis () {
+            console.log('imprimeThis', this)
+        }
+
+        function imprimeMensagem () {
+            imprimeThis.call({ msg: 'Sou um objeto' })
+        }
+
+        function imprimeMensagem2 () {
+            imprimeThis.call([ 'Sou um array' ])
+        }
+
+        imprimeMensagem ()
+        imprimeMensagem2 ()
+        imprimeThis()
+    </script>
+</body>
+</html>
